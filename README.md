@@ -18,8 +18,7 @@ A CPU ray tracer written in C++20, rendering spheres with reflective and refract
 
 ## Building
 
-Requires CMake 3.28+ and a C++20 compiler (tested with MSVC 2022 and GCC 13).
-GLM and SDL3 are downloaded automatically with `FetchContent`.
+Requires CMake 3.28+ and a C++20 compiler (tested with MSVC 2022, GCC 13 and Clang).
 
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
@@ -35,10 +34,10 @@ cmake --build build --config Release
 
 ## Next steps
 
-- Multithreaded rendering (rows split between threads, one random generator per thread)
-- A BVH to speed up intersections
-- More primitives (planes, triangles) and a Lambertian material
-- Gamma correction and PNG export
+- [ ] Multithreaded rendering (rows split between threads, one random generator per thread)
+- [ ] A BVH to speed up intersections
+- [ ] More primitives (planes, triangles) and a Lambertian material
+- [ ] Gamma correction and PNG export
 
 ## Credits
 
