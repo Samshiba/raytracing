@@ -9,7 +9,7 @@ Scene::Scene(Color backgroundColor, int maxDepth)
 	: backgroundColor(backgroundColor), maxDepth(maxDepth) {
 }
 
-std::vector<std::shared_ptr<Object>> Scene::getObjects() const
+const std::vector<std::shared_ptr<Object>>& Scene::getObjects() const
 {
 	return this->objects;
 }

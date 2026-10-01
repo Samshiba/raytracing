@@ -17,7 +17,7 @@ namespace raytracer {
 
 			Scene(material::Color backgroundColor, int maxDepth);	
 
-			std::vector< std::shared_ptr<geometry::Object>> getObjects() const;
+			const std::vector< std::shared_ptr<geometry::Object>>& getObjects() const;
 			const std::vector< std::shared_ptr<lighting::Light>>& getLights() const;
 
 			void addObject(std::shared_ptr<geometry::Object> object);
